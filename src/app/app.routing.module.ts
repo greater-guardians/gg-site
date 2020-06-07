@@ -6,11 +6,6 @@ import { AlliesComponent } from './allies/allies.component';
 
 const routes: Routes = [
     {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-    },
-    {
         path: 'home',
         component: HomePageComponent,
     },
@@ -21,6 +16,11 @@ const routes: Routes = [
     {
         path: 'allies',
         component: AlliesComponent,
+    },
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'prefix'
     },
     // {
     //     path: 'gears'
