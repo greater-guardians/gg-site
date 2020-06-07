@@ -17,3 +17,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 a:hover {
     opacity: 0.5;
 }
+
+img {
+    width: 80%;
+    height: auto;
+}
