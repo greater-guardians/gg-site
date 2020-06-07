@@ -7,6 +7,11 @@ import { AlliesComponent } from './allies/allies.component';
 const routes: Routes = [
     {
         path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
         component: HomePageComponent,
     },
     {
