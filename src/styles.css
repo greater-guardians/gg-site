@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e0c894;}
+
+.card-block {
+    border: 2px solid #826019;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% 60%;
+}
+
+a:hover {
+    opacity: 0.5;
+}
