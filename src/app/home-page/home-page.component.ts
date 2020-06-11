@@ -11,14 +11,4 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  onApplyClicked() {
-    const win = window.open('https://www.fallensword.com/index.php?cmd=profile&player_id=1655022', '_blank');
-    setTimeout(() => {
-      console.log(win.document.scripts.length);
-      
-
-    }, 3000);
-  }
-
 }
