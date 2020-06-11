@@ -9,9 +9,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
     padding: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 70%;
+    width: 80%;
     display: grid;
     grid-template-columns: 30% 60%;
+    min-height: 160px;
 }
 
 a:hover {
@@ -22,3 +23,21 @@ img {
     width: 80%;
     height: auto;
 }
+
+.mat-stepper-vertical {
+    background-color: #e0c894;
+}
+
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+    background-color: #826019;
+}
+
+.mat-step-text-label {
+    font-weight: 600;
+    font-size: large;
+}
+
+.mat-vertical-stepper-header {
+    padding: 20px !important;
+}
+

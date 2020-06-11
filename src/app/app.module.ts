@@ -10,6 +10,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LeadersComponent } from './leaders/leaders.component';
 import { AlliesComponent } from './allies/allies.component';
 import { GearsComponent } from './gears/gears.component';
+import { RankingsComponent } from './rankings/rankings.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { GearsComponent } from './gears/gears.component';
     LeadersComponent,
     AlliesComponent,
     GearsComponent,
+    RankingsComponent,
   ],
   imports: [
     BrowserModule,

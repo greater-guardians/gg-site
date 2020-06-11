@@ -3,8 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LeadersComponent } from './leaders/leaders.component';
 import { AlliesComponent } from './allies/allies.component';
+import { RankingsComponent } from './rankings/rankings.component';
 
 const routes: Routes = [
+    {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'prefix'
+    },
     {
         path: 'home',
         component: HomePageComponent,
@@ -18,13 +24,9 @@ const routes: Routes = [
         component: AlliesComponent,
     },
     {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'prefix'
+        path: 'rankings',
+        component: RankingsComponent,
     },
-    // {
-    //     path: 'gears'
-    // },
     // {
     //     path: 'apply'
     // },
