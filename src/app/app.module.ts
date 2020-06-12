@@ -11,6 +11,7 @@ import { LeadersComponent } from './leaders/leaders.component';
 import { AlliesComponent } from './allies/allies.component';
 import { GearsComponent } from './gears/gears.component';
 import { RankingsComponent } from './rankings/rankings.component';
+import { SnakeGameComponent } from './snake-game/snake-game.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { RankingsComponent } from './rankings/rankings.component';
     AlliesComponent,
     GearsComponent,
     RankingsComponent,
+    SnakeGameComponent,
   ],
   imports: [
     BrowserModule,

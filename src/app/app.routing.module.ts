@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LeadersComponent } from './leaders/leaders.component';
 import { AlliesComponent } from './allies/allies.component';
 import { RankingsComponent } from './rankings/rankings.component';
+import { SnakeGameComponent } from './snake-game/snake-game.component';
 
 const routes: Routes = [
     {
@@ -27,12 +28,10 @@ const routes: Routes = [
         path: 'rankings',
         component: RankingsComponent,
     },
-    // {
-    //     path: 'apply'
-    // },
-    // {
-    //     path: 'resources'
-    // }
+    {
+        path: 'snake',
+        component: SnakeGameComponent,
+    },
 ];
 
 @NgModule({

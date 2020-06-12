@@ -41,3 +41,7 @@ img {
     padding: 20px !important;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
