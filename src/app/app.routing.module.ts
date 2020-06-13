@@ -5,6 +5,7 @@ import { LeadersComponent } from './leaders/leaders.component';
 import { AlliesComponent } from './allies/allies.component';
 import { RankingsComponent } from './rankings/rankings.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
+import { GoFishComponent } from './go-fish/go-fish.component';
 
 const routes: Routes = [
     {
@@ -32,6 +33,10 @@ const routes: Routes = [
         path: 'snake',
         component: SnakeGameComponent,
     },
+    // {
+    //     path: 'fish',
+    //     component: GoFishComponent,
+    // },
 ];
 
 @NgModule({

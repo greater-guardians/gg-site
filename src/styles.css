@@ -15,6 +15,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
     min-height: 160px;
 }
 
+a {
+    cursor: pointer;
+}
+
 a:hover {
     opacity: 0.5;
 }

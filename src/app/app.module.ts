@@ -12,6 +12,7 @@ import { AlliesComponent } from './allies/allies.component';
 import { GearsComponent } from './gears/gears.component';
 import { RankingsComponent } from './rankings/rankings.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
+import { GoFishModule } from './go-fish/go-fish.module';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SnakeGameComponent } from './snake-game/snake-game.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     AppMaterialModule,
+    GoFishModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
