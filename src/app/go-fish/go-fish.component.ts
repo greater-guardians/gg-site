@@ -74,7 +74,6 @@ export class GoFishComponent {
   }
 
   onCardClicked(press) {
-    console.log(press);
     const attributes: NamedNodeMap = press.target.attributes;
     let value = attributes.getNamedItem('value').value;
     // var value = $(press).attr('value');
@@ -114,7 +113,10 @@ export class GoFishComponent {
   }
 
   private playGame(playerInputValue, playerInputOpponent) {
-    if(playerInputValue === "x" || playerInputOpponent === "x") {
+    const searchValue = this.elementRef.nativeElement.querySelector('#searchValue');
+    const searchPlayer = this.elementRef.nativeElement.querySelector('#searchPlayer')
+
+    if(searchValue.innerHTML === "x" || searchPlayer.innerHTML === "x") {
       const playerInfo = this.elementRef.nativeElement.querySelector('#playerInfo');
       playerInfo.innerHTML = "Select opponent and card value to fish!";
       return;
@@ -128,19 +130,7 @@ export class GoFishComponent {
   
       // Overrides autoplay with human interraction
       if (canTakeTurn === 2) {
-        if(playerTakingTurn.getHand() > 1) {
-          // If player cannot draw a card because deck is empty
-          if(!this.dealer.dealCard(playerTakingTurn)) {
-            // Skip player, there is nothing else they can do
-            const playerInfo = this.elementRef.nativeElement.querySelector('#playerInfo');
-            const continueOn = this.elementRef.nativeElement.querySelector('#continue');
 
-            playerInfo.innerHTML = 'Deck is empty. Please continue to end.';
-            continueOn.innerHTML = 'Continue';
-            continue;
-          }
-        }
-  
         // Switch value to int (collected as string from image)
         var valueToSearch = parseInt(playerInputValue);
         var opponentToSearch = this.dealer.players[playerInputOpponent];
@@ -157,8 +147,13 @@ export class GoFishComponent {
       // If the player has no cards, draw a card
       if(canTakeTurn === 0) {
         // If player cannot draw a card because deck is empty
-        if(!this.dealer.dealCard(playerTakingTurn)) {
+        if(!this.dealer.dealCard(playerTakingTurn) && playerTakingTurn.human) {
           // Skip player, there is nothing else they can do
+          const playerInfo = this.elementRef.nativeElement.querySelector('#playerInfo');
+          const continueOn = this.elementRef.nativeElement.querySelector('#continue');
+
+          playerInfo.innerHTML = 'Deck is empty. Please continue to end.';
+          continueOn.innerHTML = 'Continue';
           continue;
         }
       // Else pick a card and player to fish
