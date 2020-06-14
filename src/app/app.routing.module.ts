@@ -33,10 +33,10 @@ const routes: Routes = [
         path: 'snake',
         component: SnakeGameComponent,
     },
-    // {
-    //     path: 'fish',
-    //     component: GoFishComponent,
-    // },
+    {
+        path: 'fish',
+        component: GoFishComponent,
+    },
 ];
 
 @NgModule({

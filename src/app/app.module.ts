@@ -30,7 +30,7 @@ import { GoFishModule } from './go-fish/go-fish.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     AppMaterialModule,
-    // GoFishModule,
+    GoFishModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

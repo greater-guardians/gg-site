@@ -3,7 +3,7 @@ var dealer;
 var searchValue = "x";
 var searchPlayer = "x";
 
-$(document).ready(function () {
+export function registerClickEvents() {
   $("#startButton").click(buttonPress);
   $("#continue").click(moveOn);
   $("#cardContainer").on("click", ".card", function () {
@@ -12,7 +12,7 @@ $(document).ready(function () {
   $("#opponentContainer").on("click", ".opponent", function() {
     opponentPress(this);
   });
-});
+}
 
 function buttonPress() {
   // var element = document.getElementById("sven");

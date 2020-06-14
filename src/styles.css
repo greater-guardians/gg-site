@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e0c894;}
 
+
 .card-block {
     border: 2px solid #826019;
     border-radius: 20px;
@@ -47,5 +48,60 @@ img {
 
 .strikethrough {
     text-decoration: line-through;
+}
+
+
+/** GO FISH GAME **/
+.card {
+    width: 100px;
+    /* height: 200px; */
+    border: 1px solid black;
+    justify-content: space-around;
+}
+
+.card:hover {
+    position: relative;
+    top: -10px;
+}
+
+#cardContainer {
+    /* display: flex; */
+    flex-wrap: nowrap;
+    border: 3px solid gold;
+    border-bottom: 0px;
+}
+
+#opponentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+ul {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.center {
+    /* display: block; */
+    text-align: center;
+}
+
+.tracker {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 200px;
+    margin: 5px;
+    border: 5px ridge black;
+    /* justify-content: space-around; */
 }
 
