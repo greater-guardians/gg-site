@@ -13,6 +13,8 @@ import { GearsComponent } from './gears/gears.component';
 import { RankingsComponent } from './rankings/rankings.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
 import { GoFishModule } from './go-fish/go-fish.module';
+import { HttpClientModule } from '@angular/common/http';
+import { BillyComponent } from './billy/billy.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { GoFishModule } from './go-fish/go-fish.module';
     GearsComponent,
     RankingsComponent,
     SnakeGameComponent,
+    BillyComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { GoFishModule } from './go-fish/go-fish.module';
     AppRoutingModule,
     AppMaterialModule,
     GoFishModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
