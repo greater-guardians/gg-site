@@ -14,7 +14,6 @@ import { RankingsComponent } from './rankings/rankings.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
 import { GoFishModule } from './go-fish/go-fish.module';
 import { HttpClientModule } from '@angular/common/http';
-import { BillyComponent } from './billy/billy.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,6 @@ import { BillyComponent } from './billy/billy.component';
     GearsComponent,
     RankingsComponent,
     SnakeGameComponent,
-    BillyComponent,
   ],
   imports: [
     BrowserModule,

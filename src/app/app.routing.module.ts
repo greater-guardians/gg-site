@@ -6,7 +6,6 @@ import { AlliesComponent } from './allies/allies.component';
 import { RankingsComponent } from './rankings/rankings.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
 import { GoFishComponent } from './go-fish/go-fish.component';
-import { BillyComponent } from './billy/billy.component';
 
 const routes: Routes = [
     {
@@ -37,10 +36,6 @@ const routes: Routes = [
     {
         path: 'fish',
         component: GoFishComponent,
-    },
-    {
-        path: 'billy',
-        component: BillyComponent,
     },
 ];
 
