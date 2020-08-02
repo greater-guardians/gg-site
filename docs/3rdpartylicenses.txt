@@ -87,6 +87,8 @@ THE SOFTWARE.
 
 @angular/material/button
 
+@angular/material/expansion
+
 @angular/material/icon
 
 @angular/material/stepper

@@ -14,6 +14,7 @@ import { RankingsComponent } from './rankings/rankings.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
 import { GoFishModule } from './go-fish/go-fish.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HuntingGuideComponent } from './hunting-guide/hunting-guide.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     GearsComponent,
     RankingsComponent,
     SnakeGameComponent,
+    HuntingGuideComponent,
   ],
   imports: [
     BrowserModule,

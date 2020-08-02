@@ -46,6 +46,14 @@ img {
     padding: 20px !important;
 }
 
+.mat-expansion-panel {
+    background-color: #e0c894;
+}
+
+.mat-expansion-panel-header-title {
+    font-weight: bold;;
+}
+
 .strikethrough {
     text-decoration: line-through;
 }
@@ -103,5 +111,9 @@ ul {
     margin: 5px;
     border: 5px ridge black;
     /* justify-content: space-around; */
+}
+
+.bold {
+    font-weight: bold;
 }
 

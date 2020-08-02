@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { MatSidenavModule, MatCardModule, MatButtonModule } from "@angular/material";
+import { MatSidenavModule, MatCardModule, MatButtonModule, MatExpansionModule } from "@angular/material";
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import {MatStepperModule} from '@angular/material/stepper';
@@ -11,6 +11,7 @@ const modules = [
     MatCardModule,
     MatStepperModule,
     MatButtonModule,
+    MatExpansionModule
 ];
 
 @NgModule({
