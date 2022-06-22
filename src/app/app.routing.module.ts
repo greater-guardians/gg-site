@@ -7,6 +7,7 @@ import { RankingsComponent } from './rankings/rankings.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
 import { GoFishComponent } from './go-fish/go-fish.component';
 import { HuntingGuideComponent } from './hunting-guide/hunting-guide.component';
+import { ImposterBlueComponent } from "./imposter-blue/imposter-blue.component";
 
 const routes: Routes = [
     {
@@ -41,6 +42,10 @@ const routes: Routes = [
     {
         path: 'guide',
         component: HuntingGuideComponent,
+    },
+    {
+        path: 'imposter-blue',
+        component: ImposterBlueComponent,
     },
 ];
 
