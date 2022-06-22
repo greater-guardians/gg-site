@@ -15,11 +15,8 @@ import { SnakeGameComponent } from './snake-game/snake-game.component';
 import { GoFishModule } from './go-fish/go-fish.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HuntingGuideComponent } from './hunting-guide/hunting-guide.component';
-<<<<<<< HEAD
 import { ImposterBlueComponent } from './imposter-blue/imposter-blue.component';
-=======
 import { GgLevelContentComponent } from './gg-level-content/gg-level-content.component';
->>>>>>> 23b48a23ce652450e9dffc56c72c9605ea1244f5
 
 @NgModule({
   declarations: [
@@ -32,11 +29,8 @@ import { GgLevelContentComponent } from './gg-level-content/gg-level-content.com
     RankingsComponent,
     SnakeGameComponent,
     HuntingGuideComponent,
-<<<<<<< HEAD
-    ImposterBlueComponent
-=======
+    ImposterBlueComponent,
     GgLevelContentComponent,
->>>>>>> 23b48a23ce652450e9dffc56c72c9605ea1244f5
   ],
   imports: [
     BrowserModule,

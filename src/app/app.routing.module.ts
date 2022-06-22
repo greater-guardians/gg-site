@@ -7,11 +7,8 @@ import { RankingsComponent } from './rankings/rankings.component';
 import { SnakeGameComponent } from './snake-game/snake-game.component';
 import { GoFishComponent } from './go-fish/go-fish.component';
 import { HuntingGuideComponent } from './hunting-guide/hunting-guide.component';
-<<<<<<< HEAD
 import { ImposterBlueComponent } from "./imposter-blue/imposter-blue.component";
-=======
 import { GgLevelContentComponent } from './gg-level-content/gg-level-content.component';
->>>>>>> 23b48a23ce652450e9dffc56c72c9605ea1244f5
 
 const routes: Routes = [
     {
@@ -48,13 +45,12 @@ const routes: Routes = [
         component: HuntingGuideComponent,
     },
     {
-<<<<<<< HEAD
         path: 'imposter-blue',
         component: ImposterBlueComponent,
-=======
+    },
+    {
         path: 'contest',
         component: GgLevelContentComponent,
->>>>>>> 23b48a23ce652450e9dffc56c72c9605ea1244f5
     },
 ];
 
